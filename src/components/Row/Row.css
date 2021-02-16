@@ -1,0 +1,32 @@
+.row {
+  margin: 10px;
+}
+
+.posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.posters::-webkit-scrollbar {
+  /* to remove the scrollbar but retain its functionality */
+  display: none;
+}
+
+.poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 125px;
+  margin-right: 12px;
+  transition: transform 400ms;
+}
+
+.poster:hover {
+  transform: scale(1.08);
+}
+
+.poster_large {
+  max-height: 225px;
+  margin-right: 15px;
+}
